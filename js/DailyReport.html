@@ -1,20 +1,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="app.js"></script>
     </head>
     <body>
         <h2 class="red">日報</h2>
         <div class="inputFormArea">
             <form action="" method="post">
                 <p>名前</p>
-                <input type="text" name="name"></p>
+                <input type="text" id="name"></p>
                 <p>日付</p>
-                <input type="text" name="date"></p>
+                <input type="text" id="date"></p>
                 <p class="red">業務内容</p>
-                <textarea  name="work" cols="30" rows="5"></textarea>
+                <textarea  id="work" cols="30" rows="5"></textarea>
                 </br>
                 <div class="inputButtonArea">
-                    <input type="button" value="送信">
+                    <input type="button" onclick="echoInputValue()" value="送信">
                 </div>
             </form>    
         </div>
